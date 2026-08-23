@@ -1,0 +1,85 @@
+== PHASE A: threshold mode=4, watch 4 min ==
+SUCCESS set_charging_protect = {"code":0,"data":{"result":1},"message":""}
+SUCCESS set_charging_threshold = {"code":0,"data":{"result":1},"message":""}
+SUCCESS register_battery_notify = {"code":0,"data":{"battery_percentage":80,"if_battery":0,"remain_time":-1},"message":""}
+SUCCESS get_charging_threshold = {"code":0,"data":{"mode":4},"message":""}
+SUCCESS get_charging_protect = {"code":0,"data":{"mode":1},"message":""}
+-- [A0] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":80},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":1},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":29097},"message":""}
+-- [A1] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":80},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":1},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":1084},"message":""}
+-- [A2] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":81},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":1},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":1134},"message":""}
+-- [A3] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":81},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":1},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":1173},"message":""}
+-- [A4] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":82},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":1},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":1195},"message":""}
+-- [A5] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":82},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":1},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":1203},"message":""}
+-- [A6] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":82},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":1},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":1209},"message":""}
+-- [A7] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":83},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":1},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":1220},"message":""}
+== PHASE B: threshold mode=7, watch 4 min ==
+SUCCESS set_charging_protect = {"code":0,"data":{"result":1},"message":""}
+SUCCESS set_charging_threshold = {"code":0,"data":{"result":1},"message":""}
+SUCCESS register_battery_notify = {"code":0,"data":{"battery_percentage":83,"if_battery":0,"remain_time":-1},"message":""}
+SUCCESS get_charging_threshold = {"code":0,"data":{"mode":7},"message":""}
+SUCCESS get_charging_protect = {"code":0,"data":{"mode":1},"message":""}
+-- [B0] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":83},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":1},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":-1},"message":""}
+-- [B1] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":83},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":1},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":-1},"message":""}
+-- [B2] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":83},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":1},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":-1},"message":""}
+-- [B3] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":83},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":1},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":-1},"message":""}
+-- [B4] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":83},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":1},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":-1},"message":""}
+-- [B5] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":83},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":1},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":-1},"message":""}
+-- [B6] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":83},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":1},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":-1},"message":""}
+-- [B7] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":83},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":1},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":-1},"message":""}
+== restore mode=1 ==
+SUCCESS set_charging_protect = {"code":0,"data":{"result":1},"message":""}
+SUCCESS set_charging_threshold = {"code":0,"data":{"result":1},"message":""}
+SUCCESS register_battery_notify = {"code":0,"data":{"battery_percentage":83,"if_battery":0,"remain_time":-1},"message":""}
+SUCCESS get_charging_threshold = {"code":0,"data":{"mode":1},"message":""}
+SUCCESS get_charging_protect = {"code":0,"data":{"mode":1},"message":""}
+SUCCESS get_charging_threshold = {"code":0,"data":{"mode":1},"message":""}
+SUCCESS get_charging_protect = {"code":0,"data":{"mode":1},"message":""}
+== done ==

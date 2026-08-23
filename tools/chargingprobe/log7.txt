@@ -1,0 +1,110 @@
+== TEST mode=8: accept + charge check (3 min) ==
+SUCCESS set_charging_protect = {"code":0,"data":{"result":1},"message":""}
+SUCCESS set_charging_threshold = {"code":0,"data":{"result":1},"message":""}
+SUCCESS register_battery_notify = {"code":0,"data":{"battery_percentage":90,"if_battery":0,"remain_time":-1},"message":""}
+SUCCESS get_charging_threshold = {"code":0,"data":{"mode":8},"message":""}
+SUCCESS get_charging_protect = {"code":0,"data":{"mode":1},"message":""}
+SUCCESS get_charging_threshold = {"code":0,"data":{"mode":8},"message":""}
+SUCCESS get_charging_protect = {"code":0,"data":{"mode":1},"message":""}
+-- m8[0] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":90},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":1},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":-1},"message":""}
+-- m8[1] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":90},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":1},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":-1},"message":""}
+-- m8[2] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":90},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":1},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":-1},"message":""}
+== TEST mode=9: accept + charge check (3 min) ==
+SUCCESS get_charging_threshold = {"code":0,"data":{"mode":8},"message":""}
+SUCCESS get_charging_protect = {"code":0,"data":{"mode":1},"message":""}
+-- m9[0] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":90},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":1},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":-1},"message":""}
+-- m9[1] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":90},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":1},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":-1},"message":""}
+-- m9[2] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":90},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":1},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":-1},"message":""}
+== TEST mode=10: accept + charge check (3 min) ==
+SUCCESS get_charging_threshold = {"code":0,"data":{"mode":8},"message":""}
+SUCCESS get_charging_protect = {"code":0,"data":{"mode":1},"message":""}
+-- m10[0] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":90},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":1},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":-1},"message":""}
+-- m10[1] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":90},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":1},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":-1},"message":""}
+-- m10[2] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":90},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":1},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":-1},"message":""}
+== TEST mode=12: accept + charge check (3 min) ==
+SUCCESS get_charging_threshold = {"code":0,"data":{"mode":8},"message":""}
+SUCCESS get_charging_protect = {"code":0,"data":{"mode":1},"message":""}
+-- m12[0] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":90},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":1},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":-1},"message":""}
+SUCCESS register_workLoad_mode_change = {"code":0,"data":{"mode":1},"message":""}
+SUCCESS enable_smart_share_blue_tooth = {"code":0,"data":{"smart_share_switch":1},"message":""}
+SUCCESS get_charging_threshold = {"code":0,"data":{"mode":8},"message":""}
+SUCCESS get_charging_protect = {"code":0,"data":{"mode":1},"message":""}
+-- m12[1] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":89},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":0},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":-1},"message":""}
+-- m12[2] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":89},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":0},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":-1},"message":""}
+== TEST mode=16: accept + charge check (3 min) ==
+SUCCESS get_charging_threshold = {"code":0,"data":{"mode":8},"message":""}
+SUCCESS get_charging_protect = {"code":0,"data":{"mode":1},"message":""}
+-- m16[0] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":89},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":0},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":-1},"message":""}
+-- m16[1] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":89},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":0},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":-1},"message":""}
+-- m16[2] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":89},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":0},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":-1},"message":""}
+== TEST mode=3: accept + charge check (3 min) ==
+SUCCESS get_charging_threshold = {"code":0,"data":{"mode":8},"message":""}
+SUCCESS get_charging_protect = {"code":0,"data":{"mode":1},"message":""}
+-- m3[0] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":88},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":0},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":-1},"message":""}
+-- m3[1] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":88},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":0},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":-1},"message":""}
+-- m3[2] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":88},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":0},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":-1},"message":""}
+== TEST mode=2: accept + charge check (3 min) ==
+SUCCESS get_charging_threshold = {"code":0,"data":{"mode":8},"message":""}
+SUCCESS get_charging_protect = {"code":0,"data":{"mode":1},"message":""}
+-- m2[0] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":88},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":0},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":-1},"message":""}
+-- m2[1] --
+SUCCESS get_battery_percent = {"code":0,"data":{"result":87},"message":""}
+SUCCESS get_charging_state = {"code":0,"data":{"result":0},"message":""}
+SUCCESS get_charging_remainTime = {"code":0,"data":{"result":-1},"message":""}

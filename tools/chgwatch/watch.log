@@ -1,0 +1,16 @@
+=== chgwatch start ===
+start pct=84 remain=1098
+-- watch mode=2
+mode 2 t+1min pct=85 remain=1106
+mode 2 t+2min pct=85 remain=-1
+mode 2 t+3min pct=85 remain=-1
+mode 2 STOPPED at pct=85
+mode 2 end state pct=85 (negCount=2)
+-- watch mode=3
+mode 3 t+1min pct=85 remain=-1
+mode 3 t+2min pct=85 remain=-1
+mode 3 STOPPED at pct=85
+mode 3 end state pct=85 (negCount=2)
+=== restoring mode=4 ===
+final pct=85 remain=8877
+=== done ===

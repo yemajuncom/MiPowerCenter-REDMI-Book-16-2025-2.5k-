@@ -1,0 +1,14 @@
+C:\Program Files\MI\yuanma\tools\make_icon\bin\Release\net8.0-windows\MakeIcon.exe
+C:\Program Files\MI\yuanma\tools\make_icon\bin\Release\net8.0-windows\MakeIcon.deps.json
+C:\Program Files\MI\yuanma\tools\make_icon\bin\Release\net8.0-windows\MakeIcon.runtimeconfig.json
+C:\Program Files\MI\yuanma\tools\make_icon\bin\Release\net8.0-windows\MakeIcon.dll
+C:\Program Files\MI\yuanma\tools\make_icon\bin\Release\net8.0-windows\MakeIcon.pdb
+C:\Program Files\MI\yuanma\tools\make_icon\obj\Release\net8.0-windows\MakeIcon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Program Files\MI\yuanma\tools\make_icon\obj\Release\net8.0-windows\MakeIcon.AssemblyInfoInputs.cache
+C:\Program Files\MI\yuanma\tools\make_icon\obj\Release\net8.0-windows\MakeIcon.AssemblyInfo.cs
+C:\Program Files\MI\yuanma\tools\make_icon\obj\Release\net8.0-windows\MakeIcon.csproj.CoreCompileInputs.cache
+C:\Program Files\MI\yuanma\tools\make_icon\obj\Release\net8.0-windows\MakeIcon.dll
+C:\Program Files\MI\yuanma\tools\make_icon\obj\Release\net8.0-windows\refint\MakeIcon.dll
+C:\Program Files\MI\yuanma\tools\make_icon\obj\Release\net8.0-windows\MakeIcon.pdb
+C:\Program Files\MI\yuanma\tools\make_icon\obj\Release\net8.0-windows\MakeIcon.genruntimeconfig.cache
+C:\Program Files\MI\yuanma\tools\make_icon\obj\Release\net8.0-windows\ref\MakeIcon.dll

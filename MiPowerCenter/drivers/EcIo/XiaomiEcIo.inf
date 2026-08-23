@@ -1,0 +1,28 @@
+[Version]
+Signature         = "$WINDOWS NT$"
+Class             = System
+ClassGuid         = {4d36e97d-e325-11ce-bfc1-08002be10318}
+Provider          = %MSFT%
+DriverVer = 12/17/2024,12.42.25.563
+CatalogFile       = %DriverName%.cat
+PnpLockdown       = 1
+
+[DestinationDirs]
+DefaultDestDir    = 12
+
+[DefaultInstall.NTamd64]
+CopyFiles         = XiaomiEcIo.DriverFiles
+
+[XiaomiEcIo.DriverFiles]
+%DriverName%.sys
+
+[SourceDisksNames]
+1 = %DiskId%,,,""
+
+[SourceDisksFiles]
+XiaomiEcIo.sys  = 1,,
+
+[Strings]
+MSFT              = "Xiaomi "
+DiskId			  = "XiaomiEcIo Device Installation Disk #1"
+DriverName        = "XiaomiEcIo"

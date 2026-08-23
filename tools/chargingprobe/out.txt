@@ -1,0 +1,66 @@
+2026-08-18 16:51:07.459 INFO 11836 set_screen.cpp 139: InitColorStyle failed:ScreenColorStyleConfigHelpr::LoadColorConfig fopen path : C:\Program Files\MI\mitool\chargingprobe\bin\Release\net8.0\win-x64\publish\color_style.datafailed!
+2026-08-18 16:51:07.492 INFO 15552 display_settings_module.cpp 1452: OnEyeProtectionModeNow : 0
+2026-08-18 16:51:07.580 INFO 3592 PerformanceModesModule.cpp 929: IfSupportChargingThreshold: 1
+2026-08-18 16:51:07.580 INFO 3592 PerformanceModesModule.cpp 932: PerformanceModesModule::SyncChargingProtect checking reg
+2026-08-18 16:51:07.580 INFO 3592 PerformanceModesModule.cpp 540: SetChargingProtect2 mode:8
+2026-08-18 16:51:07.596 INFO 11836 pc_info_module.cpp 784: QueryDisplayConfigInfo Start
+2026-08-18 16:51:07.597 INFO 3592 os_turbo_module.cpp 59: [OST]Check first agress privacy or not
+2026-08-18 16:51:07.597 INFO 11836 pc_info_module.cpp 852: Monitor with name D2343
+2026-08-18 16:51:07.597 INFO 11836 pc_info_module.cpp 853: HwID:\\?\DISPLAY#GSM592A#4&7b822d&0&UID4145#{e6f07b5f-ee97-4a90-b076-33f57bf4eaa7}
+2026-08-18 16:51:07.597 INFO 11836 pc_info_module.cpp 854: Dynamic:false
+2026-08-18 16:51:07.597 INFO 11836 pc_info_module.cpp 855: RefreshRate:60
+2026-08-18 16:51:07.597 INFO 11836 pc_info_module.cpp 856: on target 4145
+2026-08-18 16:51:07.600 INFO 11836 pc_info_module.cpp 895: QueryDisplayConfigInfo End
+2026-08-18 16:51:07.600 INFO 3592 os_turbo_module.cpp 86: [OST]Success to read registy, nothing to do
+2026-08-18 16:51:07.600 INFO 3592 WmiPipeClient.cpp 115: StartHygienePipeClient MiHygieneBroker.exe
+2026-08-18 16:51:07.600 INFO 3592 WmiPipeClient.cpp 125: Start XiaomiPcHost.exe
+2026-08-18 16:51:07.600 INFO 11836 HygienePipeClient.cpp 35: StartSession using_pc_host: 1;enable_junk_cleaner: 0;enable_system_boost: 0
+2026-08-18 16:51:07.600 INFO 11836 feedback_list_module.cpp 49: FeedbackListModule is_pop_up_window_in_module_ is 0
+2026-08-18 16:51:07.600 ERROR 11836 app_store_module.cpp 56: Failed to create directory: C:\Users\ADMINI~1\AppData\Local\Temp\toolBox\
+2026-08-18 16:51:07.600 INFO 8236 HygienePipeClient.cpp 110: HygienePipeClient Pipe OnConnected
+GetTheRealFileName===MStore_1.0.5.2S_Setup.exe
+2026-08-18 16:51:08,051 INFO 11836 void __cdecl InitLog(void) interface_authorization.cpp 42: -------------------------- PrivacyAuthorization run --------------------------
+2026-08-18 16:51:08,051 INFO 11836 void __cdecl miprivacy::PrivacyAuthorization::CheckTrackInit(void) privacy_authorization.cpp 344: init for user process by CheckTrackInit
+2026-08-18 16:51:08,051 INFO 2768 void __cdecl miprivacy::track::AuthorizationTrack::Init(const bool &) authorization_track.cpp 58: init start
+2026-08-18 16:51:08,051 INFO 11836 bool __cdecl miprivacy::PrivacyAuthorization::IsAuthorizated(const enum preload_app::AppId &,const class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > &) privacy_authorization.cpp 167: appid = [35] IsAuthorizated result = [1] privacy_reg_info:app_id = [35] operator_version = [5.5.2.1] accept_version = [v20251202] latest_version = [v20251202] time_stamp = [1787024948]
+2026-08-18 16:51:08.051 INFO 11836 relative_software_module.cpp 50: IsAuthorizated result true ,Ready to update icc/m3d file
+2026-08-18 16:51:08.058 INFO 17336 set_screen.cpp 1319: Get icc/m3d update url is https://icc-client.pc.mi.com/cli/query?sn=
+2026-08-18 16:51:08,138 INFO 2768 class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > __cdecl miprivacy::track::TrackQueue::GetCacheFilePath(void) track_queue.cpp 349: user dir = [C:\ProgramData] user sid = [S-1-5-21-1999024130-2999364302-3068246505-500] app name = [ChargingProbe]
+2026-08-18 16:51:08,138 INFO 2768 class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > __cdecl miprivacy::track::TrackQueue::GetCacheFilePath(void) track_queue.cpp 355: cache file path = C:\ProgramData\MI\privacy\ChargingProbe\500\
+2026-08-18 16:51:08,138 INFO 15188 void __cdecl miprivacy::track::AuthorizationTrack::Upload(void) authorization_track.cpp 181: upload start
+2026-08-18 16:51:08,138 INFO 15188 void __cdecl miprivacy::track::AuthorizationTrack::Upload(void) authorization_track.cpp 210: upload end
+2026-08-18 16:51:08,138 INFO 2768 void __cdecl miprivacy::track::AuthorizationTrack::Init(const bool &) authorization_track.cpp 73: init end
+2026-08-18 16:51:08.168 ERROR 11836 replacement_assistant_module.cpp 55: Failed to create directory: C:\Users\ADMINI~1\AppData\Local\Temp\toolBox\
+GetTheStoreAppPath==
+GetTheRealFileName===MPCmover1.0.3.13S.exe
+2026-08-18 16:51:08.292 ERROR 11836 remote_control_module.cpp 52: Failed to create directory: C:\ProgramData\Timi Personal Computing\Update\91\Update\ err:3
+2026-08-18 16:51:08.308 DEBUG 11836 exception_repair_module.cpp 39: ExceptionRepairModule::ExceptionRepairModule
+2026-08-18 16:51:08.309 INFO 11836 pc_host_pipe_client.cpp 135: SetCallback: 000001B080E391C0
+2026-08-18 16:51:08.309 INFO 11836 pc_host_pipe_client.cpp 78: Start session
+2026-08-18 16:51:08.315 INFO 2148 pc_host_pipe_client.cpp 68: Connected, id: 
+2026-08-18 16:51:08.323 INFO 11836 touch_setting_manager.cpp 110: init touch list
+2026-08-18 16:51:08.327 ERROR 11836 touch_setting_manager.cpp 118: touch: Unable to open DevicePresent
+2026-08-18 16:51:08.327 ERROR 11836 touch_setting_manager.cpp 324: touch:SetOutputReport error: 6
+2026-08-18 16:51:08.459 ERROR 11836 touch_setting_manager.cpp 352: touch:GetInputReport failed with error: 6
+2026-08-18 16:51:08.459 ERROR 11836 touch_setting_manager.cpp 462: touch:versionv0.0.0.0
+2026-08-18 16:51:08.459 ERROR 11836 touch_setting_manager.cpp 295: touch UnInit HandleDeviceDisconnected
+2026-08-18 16:51:08.480 INFO 11836 driver_manager_module.cpp 94: DriverManagerModule::Execute request:  {"method":"set_charging_threshold","params":{"mode":7}}
+2026-08-18 16:51:08.480 INFO 11836 system_accelerate_module.cpp 21: SystemAccelerateModule::Execute request:  {"method":"set_charging_threshold","params":{"mode":7}}
+2026-08-18 16:51:08.480 INFO 11836 PerformanceModesModule.cpp 540: SetChargingProtect2 mode:7
+2026-08-18 16:51:08.480 INFO 11836 PerformanceModesModule.cpp 978: RECORD ChargingThreshold: 7
+2026-08-18 16:51:08.508 INFO 15444 PerformanceModesModule.cpp 579: NotifyWebBatteryInfo called for: [0]
+2026-08-18 16:51:08.523 INFO 15444 PerformanceModesModule.cpp 1458: HandleGetChargingProtect: 7
+2026-08-18 16:51:08.523 INFO 15444 PerformanceModesModule.cpp 978: RECORD ChargingThreshold: 7
+2026-08-18 16:51:08.523 INFO 15444 PerformanceModesModule.cpp 968: RECORD ChargingProtect: 1
+2026-08-18 16:51:08.555 INFO 17336 set_screen.cpp 1349: Get icc/m3d Update list size = 0
+2026-08-18 16:51:09.285 INFO 11836 driver_manager_module.cpp 94: DriverManagerModule::Execute request:  {"method":"get_battery_percent","params":{}}
+2026-08-18 16:51:09.314 INFO 11836 system_accelerate_module.cpp 21: SystemAccelerateModule::Execute request:  {"method":"get_battery_percent","params":{}}
+2026-08-18 16:52:09.846 INFO 11836 driver_manager_module.cpp 94: DriverManagerModule::Execute request:  {"method":"get_battery_percent","params":{}}
+2026-08-18 16:52:09.849 INFO 11836 system_accelerate_module.cpp 21: SystemAccelerateModule::Execute request:  {"method":"get_battery_percent","params":{}}
+2026-08-18 16:53:10.363 INFO 11836 driver_manager_module.cpp 94: DriverManagerModule::Execute request:  {"method":"get_battery_percent","params":{}}
+2026-08-18 16:53:10.389 INFO 11836 system_accelerate_module.cpp 21: SystemAccelerateModule::Execute request:  {"method":"get_battery_percent","params":{}}
+2026-08-18 16:54:10.906 INFO 11836 driver_manager_module.cpp 94: DriverManagerModule::Execute request:  {"method":"get_battery_percent","params":{}}
+2026-08-18 16:54:10.926 INFO 11836 system_accelerate_module.cpp 21: SystemAccelerateModule::Execute request:  {"method":"get_battery_percent","params":{}}
+2026-08-18 16:55:11.446 INFO 11836 driver_manager_module.cpp 94: DriverManagerModule::Execute request:  {"method":"get_battery_percent","params":{}}
+2026-08-18 16:55:11.464 INFO 11836 system_accelerate_module.cpp 21: SystemAccelerateModule::Execute request:  {"method":"get_battery_percent","params":{}}
+2026-08-18 16:56:05,180 INFO 15552 __cdecl miprivacy::track::AuthorizationTrack::~AuthorizationTrack(void) authorization_track.cpp 49: AuthorizationTrack::~AuthorizationTrack

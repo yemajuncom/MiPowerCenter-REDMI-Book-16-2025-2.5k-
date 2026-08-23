@@ -1,0 +1,5 @@
+C:\Program Files\MI\mitool\chargingcalib\bin\CapScan.exe
+C:\Program Files\MI\mitool\chargingcalib\bin\CapScan.dll
+C:\Program Files\MI\mitool\chargingcalib\bin\CapScan.deps.json
+C:\Program Files\MI\mitool\chargingcalib\bin\CapScan.runtimeconfig.json
+C:\Program Files\MI\mitool\chargingcalib\bin\CapScan.pdb

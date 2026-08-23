@@ -1,0 +1,218 @@
+<Window x:Class="MiPowerCenter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:MiPowerCenter"
+        xmlns:ctrl="clr-namespace:MiPowerCenter.Controls"
+        Title="电池性能管理" Height="760" Width="460" Icon="Assets/app.ico"
+        WindowStyle="None" ResizeMode="NoResize"
+        Background="{StaticResource BgBrush}"
+        FontFamily="Microsoft YaHei UI, Segoe UI"
+        WindowStartupLocation="CenterScreen"
+        ShowInTaskbar="True">
+    <Window.Resources>
+        <Style x:Key="CloseBtn" TargetType="Button">
+            <Setter Property="Width" Value="30"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="#FFFFFFFF"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="bd" Background="{TemplateBinding Background}"
+                                CornerRadius="6" SnapsToDevicePixels="True">
+                            <Path Data="M 7 7 L 23 23 M 23 7 L 7 23"
+                                  Stroke="{TemplateBinding Foreground}" StrokeThickness="1.6"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="bd" Property="Background" Value="#33FFFFFF"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="46"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title bar -->
+        <Grid Grid.Row="0" Background="Transparent" MouseLeftButtonDown="TitleBar_MouseDown">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="18,0,0,0">
+                <TextBlock Text="电池性能管理" FontSize="15" Foreground="{StaticResource TextPrimaryBrush}"
+                           FontWeight="SemiBold" VerticalAlignment="Center"/>
+                <Border x:Name="StateChip" CornerRadius="9" Height="18" Margin="10,0,0,0"
+                        VerticalAlignment="Center" Background="#33FF6900"
+                        Visibility="Collapsed">
+                    <TextBlock x:Name="StateChipText" Text="" FontSize="10" Foreground="#FFFFAC59"
+                               Margin="8,0" VerticalAlignment="Center"/>
+                </Border>
+            </StackPanel>
+            <Button Grid.Row="0" Style="{StaticResource CloseBtn}" Click="Close_Click"
+                    HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,0"/>
+        </Grid>
+
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto"
+                      Padding="16,4,16,0">
+            <StackPanel>
+                <!-- Battery card -->
+                <Border CornerRadius="12" Background="{StaticResource CardBrush}"
+                        BorderBrush="{StaticResource CardStroke}" BorderThickness="1"
+                        Padding="16,14">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Border Width="74" Height="42" CornerRadius="8" Background="#FF252525">
+                            <ctrl:BatteryIconControl x:Name="BatteryIcon" Width="64" Height="36"
+                                                     HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="14,0,0,0">
+                            <TextBlock x:Name="BattPercentText" FontSize="26" FontWeight="Bold"
+                                       Foreground="{StaticResource TextPrimaryBrush}" Text="--"/>
+                            <TextBlock x:Name="BattStatusText" FontSize="12" Margin="0,2,0,0"
+                                       Foreground="{StaticResource TextSecondaryBrush}" Text="读取中…"/>
+                            <TextBlock x:Name="BattHealthText" FontSize="11" Margin="0,4,0,0"
+                                       Foreground="{StaticResource TextMutedBrush}" Text="健康度 --"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right">
+                            <TextBlock x:Name="ModeNameText" FontSize="12" Foreground="#FFFFAC59"
+                                       HorizontalAlignment="Right"/>
+                            <TextBlock x:Name="ModePctText" FontSize="11" Foreground="{StaticResource TextMutedBrush}"
+                                       HorizontalAlignment="Right" Margin="0,3,0,0" Text="当前功耗策略"/>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+
+                <!-- Charge protect card -->
+                <Border CornerRadius="12" Margin="0,12,0,0"
+                        Background="{StaticResource CardBrush}"
+                        BorderBrush="{StaticResource CardStroke}" BorderThickness="1"
+                        Padding="16,12">
+                    <StackPanel>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="充电保护" FontSize="14" FontWeight="SemiBold"
+                                           Foreground="{StaticResource TextPrimaryBrush}"/>
+                                <TextBlock x:Name="ChargeProtectStatusText" FontSize="11" Margin="0,3,0,0"
+                                           Foreground="{StaticResource TextSecondaryBrush}"
+                                           Text="电量达到保护值后自动停止充电"/>
+                            </StackPanel>
+                            <ToggleButton x:Name="ChargeProtectToggle" Grid.Column="1"
+                                          VerticalAlignment="Center" IsChecked="False"
+                                          Style="{StaticResource XiaomiToggle}"
+                                          Checked="ChargeProtectToggle_Changed"
+                                          Unchecked="ChargeProtectToggle_Changed"/>
+                        </Grid>
+                        <StackPanel x:Name="ThresholdPanel" Orientation="Horizontal" Margin="0,12,0,0"
+                                    Visibility="Collapsed">
+                            <TextBlock x:Name="ThresholdLabel" Text="停止充电电量为" FontSize="12"
+                                       Foreground="{StaticResource TextSecondaryBrush}"
+                                       VerticalAlignment="Center" Margin="0,0,10,0"/>
+                            <Button x:Name="Thr70" Tag="70" Click="Threshold_Click"
+                                    Style="{StaticResource ThresholdPill}" Content="70%"/>
+                            <Button x:Name="Thr90" Tag="90" Click="Threshold_Click"
+                                    Style="{StaticResource ThresholdPill}" Content="90%"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+                <!-- Performance mode card -->
+                <Border CornerRadius="12" Margin="0,12,0,0"
+                        Background="{StaticResource CardBrush}"
+                        BorderBrush="{StaticResource CardStroke}" BorderThickness="1">
+                    <StackPanel Margin="16,12">
+                        <TextBlock Text="性能模式" FontSize="14" FontWeight="SemiBold"
+                                   Foreground="{StaticResource TextPrimaryBrush}"/>
+                        <TextBlock x:Name="ModeHintText" FontSize="11" Margin="0,3,0,0"
+                                   Foreground="{StaticResource TextSecondaryBrush}"
+                                   Text="根据当前供电方式，选择硬件功耗策略"/>
+                        <ItemsControl x:Name="ModeList" Margin="0,8,0,0">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Border x:Name="row" CornerRadius="10" Margin="0,4"
+                                            BorderThickness="1" BorderBrush="#00FFFFFF"
+                                            Background="Transparent" Cursor="Hand"
+                                            MouseLeftButtonDown="ModeRow_Click">
+                                        <Grid Margin="12,8">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="40"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Image Width="36" Height="36" Stretch="Uniform"
+                                                   RenderOptions.BitmapScalingMode="HighQuality"
+                                                   Source="{Binding Icon, Mode=OneWay}"/>
+                                            <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="10,0,0,0">
+                                                <TextBlock Text="{Binding Name}" FontSize="14" FontWeight="SemiBold"
+                                                           Foreground="{StaticResource TextPrimaryBrush}"/>
+                                                <TextBlock Text="{Binding Subtitle}" FontSize="11" Margin="0,2,0,0"
+                                                           Foreground="{StaticResource TextSecondaryBrush}"/>
+                                            </StackPanel>
+                                            <Grid Grid.Column="2" VerticalAlignment="Center">
+                                                <Ellipse x:Name="ring" Width="18" Height="18" Stroke="#FF555555"
+                                                         StrokeThickness="1.6"/>
+                                                <Ellipse x:Name="dot" Width="10" Height="10"
+                                                         Fill="{StaticResource AccentBrush}" Visibility="Collapsed"/>
+                                            </Grid>
+                                        </Grid>
+                                    </Border>
+                                    <DataTemplate.Triggers>
+                                        <DataTrigger Binding="{Binding IsSelected}" Value="True">
+                                            <Setter TargetName="row" Property="Background" Value="{StaticResource AccentSoftBrush}"/>
+                                            <Setter TargetName="row" Property="BorderBrush" Value="{StaticResource AccentBrush}"/>
+                                            <Setter TargetName="dot" Property="Visibility" Value="Visible"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding IsEnabled}" Value="False">
+                                            <Setter TargetName="row" Property="Opacity" Value="0.4"/>
+                                            <Setter TargetName="row" Property="Cursor" Value="Arrow"/>
+                                        </DataTrigger>
+                                    </DataTemplate.Triggers>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </StackPanel>
+                </Border>
+
+                <!-- Service info -->
+                <Border CornerRadius="12" Margin="0,12,0,0"
+                        Background="{StaticResource CardBrush}"
+                        BorderBrush="{StaticResource CardStroke}" BorderThickness="1"
+                        Padding="14,10">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Ellipse x:Name="SvcDot" Width="8" Height="8" Fill="#FF8E8E8E"
+                                 VerticalAlignment="Center"/>
+                        <TextBlock x:Name="SvcText" Grid.Column="1" Margin="8,0,0,0"
+                                   FontSize="11" Foreground="{StaticResource TextSecondaryBrush}"
+                                   TextWrapping="Wrap" Text="正在连接小米服务…"/>
+                    </Grid>
+                </Border>
+            </StackPanel>
+        </ScrollViewer>
+
+        <TextBlock Grid.Row="2" FontSize="10" Foreground="{StaticResource TextMutedBrush}"
+                   HorizontalAlignment="Center" Margin="0,6,0,10" Cursor="Hand">
+            <Hyperlink x:Name="FootLink" NavigateUri="https://yemajun.com"
+                       RequestNavigate="FootLink_RequestNavigate"
+                       Foreground="{StaticResource TextMutedBrush}"
+                       TextDecorations="None">@Yemajun.com</Hyperlink>
+        </TextBlock>
+    </Grid>
+</Window>

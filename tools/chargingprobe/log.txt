@@ -1,0 +1,35 @@
+CreateSvrCModule...
+CreateSvrCModule True
+== support ===
+>> is_support_charging_threshold {}
+== gets ===
+>> get_charging_protect {}
+>> get_charging_threshold {}
+>> get_charging_state {}
+SUCCESS method=get_charging_state resp={"code":0,"data":{"result":1},"message":""}
+>> get_charging_remainTime {}
+SUCCESS method=get_charging_remainTime resp={"code":0,"data":{"result":-1},"message":""}
+>> get_battery_health_status {}
+>> get_battery_original_info {}
+>> get_battery_percent {}
+SUCCESS method=get_battery_percent resp={"code":0,"data":{"result":79},"message":""}
+>> get_battery_time {}
+SUCCESS method=get_charging_threshold resp={"code":0,"data":{"mode":1},"message":""}
+SUCCESS method=get_charging_protect resp={"code":0,"data":{"mode":1},"message":""}
+SUCCESS method=get_charging_threshold resp={"code":0,"data":{"mode":1},"message":""}
+SUCCESS method=get_charging_protect resp={"code":0,"data":{"mode":1},"message":""}
+SUCCESS method=get_battery_health_status resp={"code":0,"data":{"status":0},"message":""}
+SUCCESS method=get_battery_original_info resp={"code":0,"data":{"mode":0},"message":""}
+== schema sniff: SET empty param variants (no-op exploration, always using last read value) ===
+>> set_charging_protect {}
+EX: System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.Runtime.InteropServices.SEHException (0x80004005): External component has thrown an exception.
+   at SvrCModuleClrWrapper.ModuleController.Execute(String request, Int64 query_id)
+   at InvokeStub_ModuleController.Execute(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at ChargingProbe.Exec(String method, String prm) in C:\Program Files\MI\mitool\chargingprobe\Program.cs:line 71
+   at ChargingProbe.Main() in C:\Program Files\MI\mitool\chargingprobe\Program.cs:line 56
+== done ==

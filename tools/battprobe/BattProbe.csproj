@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <Nullable>disable</Nullable>
+    <AssemblyName>BattProbe</AssemblyName>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <XiaomiDir Condition="Exists('C:\Program Files\MI\XiaomiPCManager\5.8.1.121')">C:\Program Files\MI\XiaomiPCManager\5.8.1.121</XiaomiDir>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(XiaomiDir)' != ''">
+    <XiaomiContent Include="$(XiaomiDir)\*.dll"
+                   Exclude="$(XiaomiDir)\SvrCModuleClrWrapper.dll;
+                            $(XiaomiDir)\Microsoft.*.dll;
+                            $(XiaomiDir)\System.*.dll;
+                            $(XiaomiDir)\mscorlib.dll;
+                            $(XiaomiDir)\netstandard.dll;
+                            $(XiaomiDir)\WindowsBase.dll;
+                            $(XiaomiDir)\Presentation*.dll" />
+    <Content Include="@(XiaomiContent)"
+             CopyToOutputDirectory="PreserveNewest"
+             CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,58 @@
+== baseline ==
+>> get_charging_protect {}
+SUCCESS get_charging_threshold = {"code":0,"data":{"mode":1},"message":""}
+SUCCESS get_charging_protect = {"code":0,"data":{"mode":1},"message":""}
+>> get_charging_threshold {}
+SUCCESS get_charging_threshold = {"code":0,"data":{"mode":1},"message":""}
+SUCCESS get_charging_protect = {"code":0,"data":{"mode":1},"message":""}
+== set charging_threshold mode=2 then read back, restore 1 ==
+>> set_charging_threshold {"mode":2}
+>> get_charging_threshold {}
+SUCCESS get_charging_threshold = {"code":0,"data":{"mode":1},"message":""}
+SUCCESS get_charging_protect = {"code":0,"data":{"mode":1},"message":""}
+>> get_charging_protect {}
+SUCCESS get_charging_threshold = {"code":0,"data":{"mode":1},"message":""}
+SUCCESS get_charging_protect = {"code":0,"data":{"mode":1},"message":""}
+>> set_charging_threshold {"mode":1}
+SUCCESS set_charging_protect = {"code":0,"data":{"result":1},"message":""}
+SUCCESS set_charging_threshold = {"code":0,"data":{"result":1},"message":""}
+SUCCESS register_battery_notify = {"code":0,"data":{"battery_percentage":80,"if_battery":0,"remain_time":-1},"message":""}
+>> get_charging_threshold {}
+SUCCESS get_charging_threshold = {"code":0,"data":{"mode":1},"message":""}
+SUCCESS get_charging_protect = {"code":0,"data":{"mode":1},"message":""}
+== set charging_threshold mode=3 then read back, restore 1 ==
+>> set_charging_threshold {"mode":3}
+>> get_charging_threshold {}
+SUCCESS get_charging_threshold = {"code":0,"data":{"mode":1},"message":""}
+SUCCESS get_charging_protect = {"code":0,"data":{"mode":1},"message":""}
+>> get_charging_protect {}
+SUCCESS get_charging_threshold = {"code":0,"data":{"mode":1},"message":""}
+SUCCESS get_charging_protect = {"code":0,"data":{"mode":1},"message":""}
+>> set_charging_threshold {"mode":1}
+SUCCESS set_charging_protect = {"code":0,"data":{"result":1},"message":""}
+SUCCESS set_charging_threshold = {"code":0,"data":{"result":1},"message":""}
+SUCCESS register_battery_notify = {"code":0,"data":{"battery_percentage":80,"if_battery":0,"remain_time":-1},"message":""}
+>> get_charging_threshold {}
+SUCCESS get_charging_threshold = {"code":0,"data":{"mode":1},"message":""}
+SUCCESS get_charging_protect = {"code":0,"data":{"mode":1},"message":""}
+== set charging_threshold mode=0 then read back, restore 1 ==
+>> set_charging_threshold {"mode":0}
+SUCCESS set_charging_protect = {"code":0,"data":{"result":1},"message":""}
+SUCCESS set_charging_threshold = {"code":0,"data":{"result":1},"message":""}
+SUCCESS register_battery_notify = {"code":0,"data":{"battery_percentage":80,"if_battery":0,"remain_time":-1},"message":""}
+>> get_charging_threshold {}
+SUCCESS get_charging_threshold = {"code":0,"data":{"mode":1},"message":""}
+SUCCESS get_charging_protect = {"code":0,"data":{"mode":0},"message":""}
+>> get_charging_protect {}
+SUCCESS get_charging_threshold = {"code":0,"data":{"mode":1},"message":""}
+SUCCESS get_charging_protect = {"code":0,"data":{"mode":0},"message":""}
+>> set_charging_threshold {"mode":1}
+SUCCESS set_charging_protect = {"code":0,"data":{"result":1},"message":""}
+SUCCESS set_charging_threshold = {"code":0,"data":{"result":1},"message":""}
+SUCCESS register_battery_notify = {"code":0,"data":{"battery_percentage":80,"if_battery":0,"remain_time":-1},"message":""}
+>> get_charging_threshold {}
+SUCCESS get_charging_threshold = {"code":0,"data":{"mode":1},"message":""}
+SUCCESS get_charging_protect = {"code":0,"data":{"mode":1},"message":""}
+== register charging state notify? try register_charging_state_change ==
+>> register_charging_state_change {}
+== done ==

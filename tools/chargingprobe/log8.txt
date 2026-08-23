@@ -1,0 +1,19 @@
+== PHASE 1: mode=7 (80 cap), wait for battery to settle near 80 ==
+SUCCESS set_charging_protect = {"code":0,"data":{"result":1},"message":""}
+SUCCESS set_charging_threshold = {"code":0,"data":{"result":1},"message":""}
+SUCCESS register_battery_notify = {"code":0,"data":{"battery_percentage":85,"if_battery":1,"remain_time":29487},"message":""}
+SUCCESS get_charging_threshold = {"code":0,"data":{"mode":7},"message":""}
+SUCCESS get_charging_protect = {"code":0,"data":{"mode":1},"message":""}
+SUCCESS get_battery_percent = {"code":0,"data":{"result":85},"message":""}
+start settle from 85
+SUCCESS get_battery_percent = {"code":0,"data":{"result":85},"message":""}
+settle pct=85
+SUCCESS get_battery_percent = {"code":0,"data":{"result":85},"message":""}
+settle pct=85
+SUCCESS get_battery_percent = {"code":0,"data":{"result":85},"message":""}
+settle pct=85
+SUCCESS get_workLoad_mode_decepticon_enable = {"code":0,"data":{"enable":1},"message":""}
+SUCCESS get_charging_threshold = {"code":0,"data":{"mode":7},"message":""}
+SUCCESS get_charging_protect = {"code":0,"data":{"mode":1},"message":""}
+SUCCESS get_battery_percent = {"code":0,"data":{"result":85},"message":""}
+settle pct=85

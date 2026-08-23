@@ -1,0 +1,14 @@
+C:\Program Files\MI\mitool\chargingcalib\obj\Release\net8.0\CapScan.GeneratedMSBuildEditorConfig.editorconfig
+C:\Program Files\MI\mitool\chargingcalib\obj\Release\net8.0\CapScan.AssemblyInfoInputs.cache
+C:\Program Files\MI\mitool\chargingcalib\obj\Release\net8.0\CapScan.AssemblyInfo.cs
+C:\Program Files\MI\mitool\chargingcalib\obj\Release\net8.0\CapScan.csproj.CoreCompileInputs.cache
+C:\Program Files\MI\mitool\chargingcalib\bin\Release\net8.0\CapScan.exe
+C:\Program Files\MI\mitool\chargingcalib\bin\Release\net8.0\CapScan.deps.json
+C:\Program Files\MI\mitool\chargingcalib\bin\Release\net8.0\CapScan.runtimeconfig.json
+C:\Program Files\MI\mitool\chargingcalib\bin\Release\net8.0\CapScan.dll
+C:\Program Files\MI\mitool\chargingcalib\bin\Release\net8.0\CapScan.pdb
+C:\Program Files\MI\mitool\chargingcalib\obj\Release\net8.0\CapScan.dll
+C:\Program Files\MI\mitool\chargingcalib\obj\Release\net8.0\refint\CapScan.dll
+C:\Program Files\MI\mitool\chargingcalib\obj\Release\net8.0\CapScan.pdb
+C:\Program Files\MI\mitool\chargingcalib\obj\Release\net8.0\CapScan.genruntimeconfig.cache
+C:\Program Files\MI\mitool\chargingcalib\obj\Release\net8.0\ref\CapScan.dll

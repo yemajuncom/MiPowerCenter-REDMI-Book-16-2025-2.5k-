@@ -1,0 +1,25 @@
+=== setone mode=6 toggle=True ===
+[toggle] protect off
+set_charging_protect => {"code":0,"data":{"result":1},"message":""}
+set_charging_threshold => {"code":0,"data":{"result":1},"message":""}
+register_battery_notify => {"code":0,"data":{"battery_percentage":78,"if_battery":0,"remain_time":-1},"message":""}
+get_charging_threshold => {"code":0,"data":{"mode":6},"message":""}
+get_charging_protect => {"code":0,"data":{"mode":0},"message":""}
+get_charging_threshold => {"code":0,"data":{"mode":6},"message":""}
+get_charging_protect => {"code":0,"data":{"mode":0},"message":""}
+set_charging_protect => {"code":0,"data":{"result":1},"message":""}
+set_charging_threshold => {"code":0,"data":{"result":1},"message":""}
+register_battery_notify => {"code":0,"data":{"battery_percentage":78,"if_battery":0,"remain_time":-1},"message":""}
+get_charging_threshold => {"code":0,"data":{"mode":6},"message":""}
+get_charging_protect => {"code":0,"data":{"mode":1},"message":""}
+get_charging_threshold => {"code":0,"data":{"mode":6},"message":""}
+get_charging_protect => {"code":0,"data":{"mode":1},"message":""}
+[toggle] protect on
+set_charging_protect => {"code":0,"data":{"result":1},"message":""}
+set_charging_threshold => {"code":0,"data":{"result":1},"message":""}
+register_battery_notify => {"code":0,"data":{"battery_percentage":78,"if_battery":0,"remain_time":-1},"message":""}
+get_charging_threshold => {"code":0,"data":{"mode":6},"message":""}
+get_charging_protect => {"code":0,"data":{"mode":1},"message":""}
+get_charging_threshold => {"code":0,"data":{"mode":6},"message":""}
+get_charging_protect => {"code":0,"data":{"mode":1},"message":""}
+=== setone done ===

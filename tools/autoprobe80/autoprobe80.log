@@ -1,0 +1,16 @@
+=== autoprobe80 start ===
+module ready
+probe modes=[2] immediate=True
+immediate mode; current pct=78 remain=-1
+start with mode 2
+---- set mode=2 ----
+mode 2 startPct=78
+mode 2 t+1min pct=78 remain=-1
+mode 2 t+2min pct=78 remain=-1
+mode 2 STOPPED at pct=78
+RESULT mode=2 stopPct=78
+=== choosing best 80 alias ===
+candidate mode=2 stopPct=78 dist=2
+BEST mode=2 dist=2
+final threshold set mode=2 pct=78 remain=-1
+=== autoprobe80 done ===

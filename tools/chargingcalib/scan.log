@@ -1,0 +1,56 @@
+=== capscan start, ensure protect on ===
+initial pct=79 remain=5526 (wait for AC / charging)
+-- round 0 start pct=79
+mode=2 pct=79 remain=5526
+mode=4 pct=80 remain=913
+mode=3 pct=80 remain=913
+mode=4 pct=80 remain=950
+mode=4 pct=80 remain=950
+mode=4 pct=80 remain=-1
+mode=5 pct=80 remain=-1
+mode=4 pct=80 remain=17925
+mode=6 pct=80 remain=-1
+mode=4 pct=80 remain=12229
+mode=7 pct=80 remain=-1
+mode=4 pct=80 remain=44265
+mode=8 pct=80 remain=-1
+mode=4 pct=80 remain=12245
+mode=9 pct=80 remain=12245
+mode=4 pct=80 remain=12245
+-- round 1 start pct=80
+mode=2 pct=80 remain=965
+mode=4 pct=80 remain=965
+mode=3 pct=80 remain=965
+mode=4 pct=80 remain=1014
+mode=4 pct=81 remain=1017
+mode=4 pct=81 remain=1017
+mode=5 pct=81 remain=-1
+mode=4 pct=81 remain=11700
+mode=6 pct=81 remain=-1
+mode=4 pct=81 remain=11663
+mode=7 pct=81 remain=-1
+mode=4 pct=81 remain=11678
+mode=8 pct=81 remain=-1
+mode=4 pct=81 remain=13459
+mode=9 pct=81 remain=13459
+mode=4 pct=81 remain=13459
+-- round 2 start pct=81
+mode=2 pct=81 remain=983
+mode=4 pct=81 remain=996
+mode=3 pct=81 remain=996
+mode=4 pct=81 remain=1025
+mode=4 pct=81 remain=1025
+mode=4 pct=81 remain=1025
+mode=5 pct=81 remain=-1
+mode=4 pct=81 remain=11210
+mode=6 pct=82 remain=-1
+mode=4 pct=82 remain=11230
+mode=7 pct=82 remain=-1
+mode=4 pct=82 remain=11267
+mode=8 pct=82 remain=-1
+mode=4 pct=82 remain=12730
+mode=9 pct=82 remain=12730
+mode=4 pct=82 remain=12730
+=== restoring mode=4 (known 90%) ===
+mode=4 pct=82 remain=12730
+=== done ===
